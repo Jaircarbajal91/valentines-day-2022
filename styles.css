@@ -1,0 +1,12 @@
+body {
+  background-color: #fbb1bd;
+}
+
+#big-heart-svg {
+  width: 6em;
+  fill: #ff7096;
+}
+#smol-heart-svg {
+  width: 4em;
+  fill: #ff7096;
+}
