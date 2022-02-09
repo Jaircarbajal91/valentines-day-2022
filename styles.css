@@ -1,12 +1,15 @@
-body {
-  background-color: #fbb1bd;
+html, body {
+  background: url("images/heart-background.svg");
+  background-size: cover;
+  font-family: 'Redressed', cursive;
+  height: 100%;
 }
 
-#big-heart-svg {
-  width: 6em;
-  fill: #ff7096;
-}
-#smol-heart-svg {
-  width: 4em;
-  fill: #ff7096;
+#main-content {
+  display: grid;
+  height: 95%;
+  width: fit-content(60em);
+  border: solid black;
+  grid-template-columns: 15% 25% auto 25% 15%;
+  grid-template-rows: 25% 25% 25% 25%;
 }
