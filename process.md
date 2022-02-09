@@ -1,5 +1,8 @@
 # List of features
 
+[] Orient the home page accordingly
+  [] form, poe, navigation bar, transparent romantic picture
+
 [] make the form (when typing in correct info) navigate you to a love letter
   [] form should only allow nick names
     [] Throw error if user enters "Tina Salas"
