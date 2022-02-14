@@ -19,17 +19,17 @@
 
 [] navigation bar should be across all pages.
 
-[] get links in nav to navigate you to appropriate html page
+[x] get links in nav to navigate you to appropriate html page
 
 [] create carousel for pictures that shows up to 5 pictures and is blurred out towards ends of navigation buttons
 
 [] create a quiz page
   - questions about our relationship, life, animals, shows that we've watched, places we've been.
 
-[] select font we want to use
+[x] select font we want to use
 
 [] style homepage with hearts and romantic picture that is transparent
 
-[] find a love poem
+[x] find a love poem
 
 [] decide which pictures you want to upload
