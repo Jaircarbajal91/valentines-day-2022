@@ -2,8 +2,8 @@ body {
   height: 100%;
   width: 100%;
   background: url("images/heart-background.svg");
+  background-size: cover;
   background-repeat: repeat;
-  background-position: center center;
   font-family: 'Redressed', cursive;
 }
 
@@ -51,7 +51,10 @@ h1 {
   padding: 10px;
   background-color: rgba(251, 177, 189, 0.9);
   height:fit-content;
+  max-width: fit-content;
+  max-height: fit-content;
 }
+
 
 #new-quote {
   width: 12em;
@@ -61,14 +64,37 @@ h1 {
   height: max-content;
 }
 
-#form {
+aside#form {
   grid-column: 4 / 6;
   grid-row: 2 / 3;
-  height: 22em;
   border: solid black;
-  padding: 10px;
+  height: 40vh;
+  width: 60vh;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
   margin-bottom: 5px;
-  background-color: rgba(251, 177, 189, 0.9)
+  background-color: rgba(251, 177, 189, 0.9);
+}
+
+input {
+  float: left;
+  width: 200px;
+  height: 20px;
+}
+
+label {
+  float: left;
+  width: 200px;
+  padding-right: 24px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+button {
+  float: right;
+  padding: 0.2em;
+  width: calc(100% - 200px);
 }
 
 #valentines-picture {
@@ -78,6 +104,21 @@ h1 {
   padding: 10px;
   border: solid black;
   background-color: rgba(251, 177, 189, 0.9)
+}
+
+button {
+  background-color: #c44141;
+  width: fit-content;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+
+
+/* section {
+  grid-column: 1 / 3;
+  grid-row: 3 / 5;
 }
 
 @keyframes tonext {
@@ -123,15 +164,15 @@ h1 {
   100% {
     scroll-snap-align: center;
   }
-}
+} */
 
-* {
+/* * {
   box-sizing: border-box;
   scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: 0px;
-}
+  /* scrollbar-width: 0px; */
+/* } */
 
-*::-webkit-scrollbar {
+/* *::-webkit-scrollbar {
   width: 0;
 }
 
@@ -173,10 +214,10 @@ ol, li {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   border-radius: 5% / 5%;
-}
+} */
 
 /* changing this background will change the card picture */
-.carousel__slide {
+/* .carousel__slide {
   background: url("images/wedding/wedding1.JPG") no-repeat;
   background-size: contain;
   opacity: 0.90;
@@ -209,9 +250,9 @@ ol, li {
   width: 100%;
   height: 100%;
   scroll-snap-align: center;
-}
+} */
 
-@media (hover: hover) {
+/* @media (hover: hover) {
   .carousel__snapper {
     animation-name: tonext, snap;
     animation-timing-function: ease;
@@ -306,9 +347,4 @@ ol, li {
 
 .carousel::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
-}
-
-section {
-  grid-column: 1 / 3;
-  grid-row: 3 / 5;
-}
+} */

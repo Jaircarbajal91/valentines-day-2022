@@ -37,3 +37,46 @@ newQuoteButton.addEventListener('click', (e) => {
 })
 getQuote()
 
+
+const form = document.querySelector('#form');
+const acceptableNames = {
+  Tika: 'Tika',
+  Sweet: 'Sweet',
+  Honey: 'Honey',
+  Qt: 'Qt',
+  Sweets: 'Sweets',
+  Katniss: 'Katniss',
+  Cuteness: 'Cuteness',
+  Cute: 'Cute',
+  Sweetheart: 'Sweetheart',
+  'Mi Vida': 'Mi Vida',
+  'Mi': 'Mi',
+}
+
+const acceptableLastNames = {
+  Carbajal: 'Carbajal',
+  Salas: 'Salas',
+  Everdeen: 'Everdeen',
+  Vida: 'Vida',
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let firstName = form.querySelector('input[name="first-name"]').value
+  firstName = firstName.substring(0, 1).toUpperCase() + firstName.substring(1, firstName.length).toLowerCase().trim()
+  let lastName = form.querySelector('input[name="last-name"]').value
+  lastName = lastName.substring(0, 1).toUpperCase() + lastName.substring(1, lastName.length).toLowerCase().trim()
+  console.log(firstName, lastName)
+  if (firstName in acceptableNames && lastName in acceptableLastNames) {
+    window.open('/love_letter/index.html', '_self');
+  } else {
+    // throw an alert saying the name input is incorrect
+    alert(
+      `You entered ${firstName} ${lastName}.
+
+       Please enter a correct name.
+
+       *Hint* Nick names work better :)`)
+  }
+})
+

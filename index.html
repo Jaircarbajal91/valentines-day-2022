@@ -18,6 +18,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <!-- Font for form  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -29,7 +33,7 @@
     <a href="/quiz/index.html" class="links">Quiz</a>
   </nav>
   <main id="main-content">
-    <h1>&hearts;Will <u>YOU</u> be my Valentine?&hearts;</h1>
+    <h1>&hearts; Will <u>YOU</u> be my Valentine? &hearts;</h1>
     <aside id="love-poem-aside">
       <div id="love-poem">
         <p id="love-poem-text"></p>
@@ -39,54 +43,16 @@
     </aside>
 
 
-    <section class="carousel" aria-label="Gallery">
-      <ol class="carousel__viewport">
-        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper">
-            <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-          </div>
-        </li>
-        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-        </li>
-        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-        </li>
-        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-        </li>
-      </ol>
-      <aside class="carousel__navigation">
-        <ol class="carousel__navigation-list">
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-          </li>
-        </ol>
-      </aside>
-    </section>
+
 
 
     <aside id="form">
       <form action="/love_letter/index.html">
-        <label for="username">Who goes there?</label>
-        <input type="text" name="username" id="username" required="required">
-        <button>Submit</button>
+        <label class="first-name" for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name" required="required">
+        <label for="last-name">Last Name</label>
+        <input class="last-name" type="text" name="last-name" id="last-name" required="required">
+        <button class="form-button">Submit</button>
       </form>
     </aside>
   </main>

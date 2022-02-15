@@ -5,11 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,800&display=swap" rel="stylesheet">
+
   <title>Quiz</title>
 </head>
 
 <body>
-  <h1>QUIZ APP</h1>
+  <nav>
+    <a href="../index.html" id="home-hyperlink" class="links">Home</a>
+    <a href="/pictures/index.html" class="links">Pictures</a>
+    <a href="/quiz/index.html" class="links">Quiz</a>
+  </nav>
+
+  <div class="container">
+    <div class="question-container"></div>
+    <div class="answers-container"></div>
+    <div class="letter-container"></div>
+    <div class="buttons">
+      <p id="prev">prev</p>
+      <p id="next">next</p>
+    </div>
+  </div>
 </body>
 
 </html>
